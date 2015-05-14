@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<settings>
+  <autoload>
+    <addon>boxdestroyer</addon>
+    <addon>distance</addon>
+    <addon>dynamishelper</addon>
+    <addon>PetTP</addon>
+    <addon>scoreboard</addon>
+    <addon>Silence</addon>
+    <addon>timestamp</addon>
+    <addon>TParty</addon>
+    <addon>translate</addon>
+    <addon>GearSwap</addon>
+    <addon>eval</addon>
+    <addon>shortcuts</addon>
+    <addon>findAll</addon>
+    <plugin>BlinkMeNot</plugin>
+    <plugin>BoxHelper</plugin>
+    <plugin>ChatMon</plugin>
+    <plugin>DelayMeNot</plugin>
+    <plugin>Distance</plugin>
+    <plugin>DrawDistance</plugin>
+    <plugin>FFXIDB</plugin>
+    <plugin>FishingCrashFix</plugin>
+    <plugin>LightLuggage</plugin>
+    <plugin>PetTP</plugin>
+    <plugin>Silence</plugin>
+    <plugin>StatusTimer</plugin>
+    <plugin>Timers</plugin>
+    <plugin>Timestamp</plugin>
+    <plugin>TParty</plugin>
+    <plugin>Tickle</plugin>
+    <plugin>Config</plugin>
+  </autoload>
+  <profile name="">
+    <region>EU</region>
+    <consolekey>Insert</consolekey>
+    <windowmode>Window</windowmode>
+    <width>1366</width>
+    <height>768</height>
+    <uiscale>1</uiscale>
+  </profile>
+</settings>

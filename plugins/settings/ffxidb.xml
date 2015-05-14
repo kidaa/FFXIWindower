@@ -1,0 +1,19 @@
+<settings>
+    <global>
+        <X>0</X>
+        <Y>0</Y>
+        <Zoom>100</Zoom>
+        <Opacity>75</Opacity>
+        <ShowPC>true</ShowPC>
+        <ShowNPC>true</ShowNPC>
+        <ShowMob>true</ShowMob>
+        <ShowMarker>true</ShowMarker>
+        <ShowTargetLine>true</ShowTargetLine>
+        <Ranges></Ranges>
+    </global>
+    <Xurion>
+        <X>993</X>
+        <Y>137</Y>
+        <Zoom>86</Zoom>
+    </Xurion>
+</settings>
