@@ -158,22 +158,6 @@ function init_gear_sets()
         feet="Outrider Greaves"
     }
 
-    sets.engaged.Killer = set_combine(sets.engaged, {
-        body="Ferine Gausape +1"
-    })
-
-    sets.engaged.Killer.Acc = set_combine(sets.engaged.Acc, {
-        body="Ferine Gausape +1"
-    })
-
-    --------------------------------------
-    -- Custom buff sets
-    --------------------------------------
-
-    sets.buff['Killer Instinct'] = {
-        body="Ferine Gausape +1"
-    }
-
 end
 
 
