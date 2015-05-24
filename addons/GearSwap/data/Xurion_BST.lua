@@ -87,7 +87,7 @@ function init_gear_sets()
     sets.precast.JA['Reward'] = {
         ammo=RewardFood,
         head="Khimaira Bonnet",
-        body="Beast Jackcoat",
+        body="Totemic Jackcoat",
         hands="Ogre Gloves",
         feet="Beast Gaiters"
     }
