@@ -1,0 +1,37 @@
+<global>
+    <include>
+        
+    </include>
+    <ignore>
+        <!--Items with no ID DO NOT REMOVE-->
+        <item id = "0"/>
+        <!--Gil DO NOT REMOVE -->
+        <item id = "65535"/>
+        <!--Linkshell/Pearls/Sacks DO NOT REMOVE -->
+        <item id = "512"/>
+        <item id = "513"/>
+        <item id = "514"/>
+        <item id = "515"/>
+        <item id = "516"/>
+        <item id = "517"/>
+        <item id = "518"/>
+        <item id = "519"/>
+        <item id = "520"/>
+        <item id = "521"/>
+        <item id = "522"/>
+        <item id = "523"/>
+        <item id = "524"/>
+        <item id = "525"/>
+        <item id = "526"/>
+        <item id = "527"/>
+        <item id = "528"/>
+        <!--Maze Tabula R01 -->
+        <item id = "28672"/>
+        <!--Maze Tabula R02 -->
+        <item id = "28705"/>
+        <!--Maze Tabula R03 -->
+        <item id = "28706"/>
+        <!--Add your own ID's here-->
+        
+    </ignore>
+</global>

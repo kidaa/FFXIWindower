@@ -1,0 +1,16 @@
+<settings>
+    <global>
+        <useSafe>true</useSafe>
+        <useLocker>true</useLocker>
+        <useStorage>false</useStorage>
+        <useSatchel>false</useSatchel>
+        <useSack>false</useSack>
+        <useCase>true</useCase>
+        <blockKeyboard>true</blockKeyboard>
+        <blockMouse>false</blockMouse>
+        <openStorage>true</openStorage>
+        <itemDelay>500</itemDelay>
+        <keyDelay>50</keyDelay>
+        <autoHeal>true</autoHeal>
+    </global>
+</settings>
