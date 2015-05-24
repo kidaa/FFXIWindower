@@ -6,7 +6,7 @@
     Custom commands:
 
     gs c cycle treasuremode (set on ctrl-= by default): Cycles through the available treasure hunter modes.
-    
+
     Treasure hunter modes:
         None - Will never equip TH gear
         Tag - Will equip TH gear sufficient for initial contact with a mob (either melee, ranged hit, or Aeolian Edge AOE)
@@ -18,7 +18,7 @@
 -- Initialization function for this job file.
 function get_sets()
     mote_include_version = 2
-    
+
     -- Load and initialize the include file.
     include('Mote-Include.lua')
 end
@@ -28,7 +28,7 @@ function job_setup()
     state.Buff['Sneak Attack'] = buffactive['sneak attack'] or false
     state.Buff['Trick Attack'] = buffactive['trick attack'] or false
     state.Buff['Feint'] = buffactive['feint'] or false
-    
+
     include('Mote-TreasureHunter')
 
     -- For th_action_check():
@@ -121,7 +121,7 @@ function init_gear_sets()
     sets.precast.JA['Flee'] = {
         feet="Rogue's Poulaines"
     }
-    
+
     -- sets.precast.JA['Hide'] = {body="Pillager's Vest +1"}
     sets.precast.JA['Conspirator'] = {body="Raider's Vest +2"}
     sets.precast.JA['Steal'] = {
@@ -308,12 +308,12 @@ function init_gear_sets()
     sets.engaged = {ammo="Thew Bomblet",
         head="Felistris Mask",neck="Asperity Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
         body="Qaaxo Harness",hands="Pillager's Armlets +1",ring1="Rajas Ring",ring2="Epona's Ring",
-        back="Atheling Mantle",waist="Patentia Sash",legs="Pillager's Culottes +1",feet="Plunderer's Poulaines +1"}
+        back="Atheling Mantle",waist="Twilight Belt",legs="Pillager's Culottes +1",feet="Plunderer's Poulaines +1"}
     sets.engaged.Acc = {ammo="Honed Tathlum",
         head="Whirlpool Mask",neck="Ej Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
         body="Pillager's Vest +1",hands="Pillager's Armlets +1",ring1="Rajas Ring",ring2="Epona's Ring",
         back="Letalis Mantle",waist="Hurch'lan Sash",legs="Manibozho Brais",feet="Qaaxo Leggings"}
-        
+
     -- Mod set for trivial mobs (Skadi+1)
     sets.engaged.Mod = {ammo="Thew Bomblet",
         head="Felistris Mask",neck="Asperity Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
@@ -459,23 +459,23 @@ end
 -- Return true if display was handled, and you don't want the default info shown.
 function display_current_job_state(eventArgs)
     local msg = 'Melee'
-    
+
     if state.CombatForm.has_value then
         msg = msg .. ' (' .. state.CombatForm.value .. ')'
     end
-    
+
     msg = msg .. ': '
-    
+
     msg = msg .. state.OffenseMode.value
     if state.HybridMode.value ~= 'Normal' then
         msg = msg .. '/' .. state.HybridMode.value
     end
     msg = msg .. ', WS: ' .. state.WeaponskillMode.value
-    
+
     if state.DefenseMode.value ~= 'None' then
         msg = msg .. ', ' .. 'Defense: ' .. state.DefenseMode.value .. ' (' .. state[state.DefenseMode.value .. 'DefenseMode'].value .. ')'
     end
-    
+
     if state.Kiting.value == true then
         msg = msg .. ', Kiting'
     end
@@ -487,7 +487,7 @@ function display_current_job_state(eventArgs)
     if state.SelectNPCTargets.value == true then
         msg = msg .. ', Target NPCs'
     end
-    
+
     msg = msg .. ', TH: ' .. state.TreasureMode.value
 
     add_to_chat(122, msg)

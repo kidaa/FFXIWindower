@@ -62,11 +62,20 @@
         <showallidps>true</showallidps>
         <visible>false</visible>
     </global>
+    <bigdean>
+        <display>
+            <text>
+                <stroke>
+                    <alpha>-4211734020</alpha>
+                </stroke>
+            </text>
+        </display>
+    </bigdean>
     <xurion>
         <display>
             <text>
                 <stroke>
-                    <alpha>4.5411080866855e+021</alpha>
+                    <alpha>-4.8962404919586e+033</alpha>
                 </stroke>
             </text>
         </display>

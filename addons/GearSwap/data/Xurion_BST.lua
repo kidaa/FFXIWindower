@@ -1,4 +1,4 @@
--- NOTE: I do not play bst, so this will not be maintained for 'active' use. 
+-- NOTE: I do not play bst, so this will not be maintained for 'active' use.
 -- It is added to the repository to allow people to have a baseline to build from,
 -- and make sure it is up-to-date with the library API.
 
@@ -6,7 +6,7 @@
 
 --[[
     Custom commands:
-    
+
     Ctrl-F8 : Cycle through available pet food options.
     Alt-F8 : Cycle through correlation modes for pet attacks.
 ]]
@@ -18,7 +18,7 @@
 -- Initialization function for this job file.
 function get_sets()
     mote_include_version = 2
-    
+
     -- Load and initialize the include file.
     include('Mote-Include.lua')
 end
@@ -32,7 +32,7 @@ function job_setup()
     -- Set up Monster Correlation Modes and keybind Alt-F8
     state.CorrelationMode = M{['description']='Correlation Mode', 'Neutral','Favorable'}
     send_command('bind !f8 gs c cycle CorrelationMode')
-    
+
     -- Custom pet modes for engaged gear
     state.PetMode = M{['description']='Pet Mode', 'Normal', 'PetStance', 'PetTank'}
 
@@ -122,8 +122,8 @@ function init_gear_sets()
     sets.midcast.Pet.WS = {
         neck="Ferine Necklace",
         ear2="Sabong Earring",
-        hands="Ferine Manoplas +1",
-        back="Ferine Mantle"
+        hands="Ferine Manoplas +2"
+        -- back="Ferine Mantle"
     }
 
     --------------------------------------
@@ -145,7 +145,7 @@ function init_gear_sets()
     sets.engaged = {
         ammo="Cheruski Needle",
         head="Outrider Mask",
-        neck="Peacock Charm",
+        neck="Ferine Necklace",
         ear1="Suppanomimi",
         ear2="Brutal Earring",
         body="Outrider Mail",
@@ -165,7 +165,7 @@ function init_gear_sets()
     sets.engaged.Killer.Acc = set_combine(sets.engaged.Acc, {
         body="Ferine Gausape +1"
     })
-    
+
     --------------------------------------
     -- Custom buff sets
     --------------------------------------
@@ -173,7 +173,7 @@ function init_gear_sets()
     sets.buff['Killer Instinct'] = {
         body="Ferine Gausape +1"
     }
-    
+
 end
 
 
@@ -250,23 +250,23 @@ end
 -- Set eventArgs.handled to true if we don't want the automatic display to be run.
 function display_current_job_state(eventArgs)
     local msg = 'Melee'
-    
+
     if state.CombatForm.has_value then
         msg = msg .. ' (' .. state.CombatForm.value .. ')'
     end
-    
+
     msg = msg .. ': '
-    
+
     msg = msg .. state.OffenseMode.value
     if state.HybridMode.value ~= 'Normal' then
         msg = msg .. '/' .. state.HybridMode.value
     end
     msg = msg .. ', WS: ' .. state.WeaponskillMode.value
-    
+
     if state.DefenseMode.value ~= 'None' then
         msg = msg .. ', ' .. 'Defense: ' .. state.DefenseMode.value .. ' (' .. state[state.DefenseMode.value .. 'DefenseMode'].value .. ')'
     end
-    
+
     if state.Kiting.value then
         msg = msg .. ', Kiting'
     end

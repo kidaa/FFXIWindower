@@ -12,8 +12,11 @@
         <Ranges></Ranges>
     </global>
     <Xurion>
-        <X>993</X>
-        <Y>137</Y>
-        <Zoom>86</Zoom>
+        <X>1140</X>
+        <Y>-13</Y>
+        <Zoom>65</Zoom>
+        <ShowTargetLine>false</ShowTargetLine>
+        <ShowPC>false</ShowPC>
+        <ShowNPC>false</ShowNPC>
     </Xurion>
 </settings>

@@ -14,13 +14,14 @@
     <addon>eval</addon>
     <addon>shortcuts</addon>
     <addon>findAll</addon>
+    <addon>vwhl</addon>
+    <addon>organizer</addon>
     <plugin>BlinkMeNot</plugin>
     <plugin>BoxHelper</plugin>
     <plugin>ChatMon</plugin>
     <plugin>DelayMeNot</plugin>
     <plugin>Distance</plugin>
     <plugin>DrawDistance</plugin>
-    <plugin>FFXIDB</plugin>
     <plugin>FishingCrashFix</plugin>
     <plugin>LightLuggage</plugin>
     <plugin>PetTP</plugin>
@@ -31,13 +32,14 @@
     <plugin>TParty</plugin>
     <plugin>Tickle</plugin>
     <plugin>Config</plugin>
+    <plugin>GearCollector</plugin>
   </autoload>
   <profile name="">
     <region>EU</region>
     <consolekey>Insert</consolekey>
     <windowmode>Window</windowmode>
-    <width>1366</width>
-    <height>768</height>
+    <width>1280</width>
+    <height>720</height>
     <uiscale>1</uiscale>
   </profile>
 </settings>
