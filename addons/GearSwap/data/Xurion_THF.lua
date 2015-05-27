@@ -76,34 +76,14 @@ function init_gear_sets()
     --------------------------------------
 
     sets.TreasureHunter = {
-        hands="Plunderer's Armlets +1",
-        waist="Chaac Belt",
+        hands="Assassin's Armlets +1",
         feet="Raider's Poulaines +2"
     }
 
-    -- sets.ExtraRegen = {head="Ocelomeh Headpiece +1"}
-    -- sets.Kiting = {feet="Skadi's Jambeaux +1"}
-
     sets.buff['Sneak Attack'] = {
-        ammo="Qirmiz Tathlum",
-        head="Pillager's Bonnet +1",
-        neck="Asperity Necklace",
-        ear1="Dudgeon Earring",
-        ear2="Heartseeker Earring",
-        body="Pillager's Vest +1",
-        hands="Pillager's Armlets +1",
-        ring1="Rajas Ring",
-        ring2="Epona's Ring",
-        back="Atheling Mantle",
-        waist="Patentia Sash",
-        legs="Pillager's Culottes +1",
-        feet="Plunderer's Poulaines +1"
+        neck="Breeze Gorget",
+        waist="Breeze Belt"
     }
-
-    -- sets.buff['Trick Attack'] = {ammo="Qirmiz Tathlum",
-    --     head="Pillager's Bonnet +1",neck="Asperity Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
-    --     body="Pillager's Vest +1",hands="Pillager's Armlets +1",ring1="Stormsoul Ring",ring2="Epona's Ring",
-    --     back="Atheling Mantle",waist="Patentia Sash",legs="Pillager's Culottes +1",feet="Plunderer's Poulaines +1"}
 
     -- Actions we want to use to tag TH.
     sets.precast.Step = sets.TreasureHunter
@@ -125,21 +105,19 @@ function init_gear_sets()
     -- sets.precast.JA['Hide'] = {body="Pillager's Vest +1"}
     sets.precast.JA['Conspirator'] = {body="Raider's Vest +2"}
     sets.precast.JA['Steal'] = {
-        head="Plunderer's Bonnet",
-        hands="Pillager's Armlets +1",
-        legs="Pillager's Culottes +1",
-        feet="Pillager's Poulaines +1"
+      feet="Rogue's Poulaines"
     }
-    sets.precast.JA['Despoil'] = {legs="Raider's Culottes +2",feet="Raider's Poulaines +2"}
-    sets.precast.JA['Perfect Dodge'] = {hands="Plunderer's Armlets +1"}
-    sets.precast.JA['Feint'] = {} -- {legs="Assassin's Culottes +2"}
+    sets.precast.JA['Despoil'] = {
+        legs="Raider's Culottes +1",
+        feet="Raider's Poulaines +2"
+    }
 
     sets.precast.JA['Sneak Attack'] = sets.buff['Sneak Attack']
-    sets.precast.JA['Trick Attack'] = sets.buff['Trick Attack']
 
 
     -- Waltz set (chr and vit)
-    sets.precast.Waltz = {ammo="Sonia's Plectrum",
+    sets.precast.Waltz = {
+        ammo="Sonia's Plectrum",
         head="Whirlpool Mask",
         body="Pillager's Vest +1",hands="Pillager's Armlets +1",ring1="Asklepian Ring",
         back="Iximulew Cape",waist="Caudata Belt",legs="Pillager's Culottes +1",feet="Plunderer's Poulaines +1"}

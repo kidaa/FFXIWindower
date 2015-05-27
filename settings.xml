@@ -4,7 +4,6 @@
     <addon>boxdestroyer</addon>
     <addon>distance</addon>
     <addon>dynamishelper</addon>
-    <addon>PetTP</addon>
     <addon>scoreboard</addon>
     <addon>Silence</addon>
     <addon>timestamp</addon>
@@ -16,6 +15,7 @@
     <addon>findAll</addon>
     <addon>vwhl</addon>
     <addon>organizer</addon>
+    <addon>PetTP</addon>
     <plugin>BlinkMeNot</plugin>
     <plugin>BoxHelper</plugin>
     <plugin>ChatMon</plugin>
